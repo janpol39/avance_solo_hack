@@ -9,6 +9,8 @@ Firmware Process:
 The device uses an STM32F051C8T6 microcontroller, which can be programmed via the SWD interface.
 
 To flash the device, you’ll first need to solder the SWD connector contacts (in the future, I plan to provide a 3D printer schematic to create a programmer with spring-loaded pins, avoiding soldering). In the screenshot, you can see that the lower row of exposed pins is for the SWD connector, while the upper row is for the controller’s UART (which might be useful to you later but is not needed for the flashing process). Connect any SWD programmer (for example, ST-Link or RPi probe) to the exposed pins.
+![schema](https://github.com/user-attachments/assets/e71f7a62-b547-458f-9230-8542e6c95c6e)
+
 
 For flashing, we’ll use the RPi probe programmer, software to control the SWD bus (OpenOCD), and any Linux distribution as the host.
 
